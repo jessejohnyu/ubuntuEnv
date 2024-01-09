@@ -1,0 +1,15 @@
+
+alias srb='source ~/.bashrc'
+
+alias srz='source ~/.zshrc'
+
+alias sl='ls'
+
+alias mkdir='mkdir -pv'
+
+alias vi='vim'
+alias svi='sudo vi'
+
+alias diff='colordiff'
+
+
