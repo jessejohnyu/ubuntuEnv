@@ -132,7 +132,10 @@ export https_proxy="http://proxy-chj.nioint.com:8080/"
 export ftp_proxy="http://proxy-chj.nioint.com:8080/"
 export no_proxy="http://proxy-chj.nioint.com:8080/"
 
-
+export GOPATH=/usr/local/go/bin
+export GO111MODULE=on
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$PATH:$GOPATH:$JAVA_HOME/bin
 
 
 
