@@ -61,25 +61,6 @@ set wildmenu
 set wildmode=longest:list,full
 
 
-" 注意：这里设置使用 Ctrl + 上下左右来切换窗口，请查看官方文档来自定义
-nnoremap <C-Down> <C-W><C-J>
-nnoremap <C-Up> <C-W><C-K>
-nnoremap <C-Left> <C-W><C-H>
-nnoremap <C-Right> <C-W><C-L>
-
-map <T> :MBEbp<CR>
-map <R> :MBEbn<CR>
-
-"Enable folding
-set foldmethod=indent
-set foldlevel=99
-
-"Enable folding with the spacebar
-nnoremap <space> za
-
-
-filetype off " required
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -156,6 +137,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " 我设置 F3 为打开或者关闭的快捷键，你可以自定义
 map <F3> :NERDTreeToggle<CR>
 
+let NERDTreeShowHidden=1
+
 " 安装插件
 Plugin 'fholgado/minibufexpl.vim'
 
@@ -166,4 +149,22 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 let g:miniBufExplMoreThanOne=0
 
+
+" 注意：这里设置使用 Ctrl + 上下左右来切换窗口，请查看官方文档来自定义
+nnoremap <C-Down> <C-W><C-J>
+nnoremap <C-Up> <C-W><C-K>
+nnoremap <C-Left> <C-W><C-H>
+nnoremap <C-Right> <C-W><C-L>
+
+map <T> :MBEbp<CR>
+map <R> :MBEbn<CR>
+
+"Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+"Enable folding with the spacebar
+nnoremap <space> za
+
+filetype off " required
 

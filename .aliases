@@ -7,7 +7,8 @@ alias sl='ls'
 
 alias mkdir='mkdir -pv'
 
-alias vi='vim'
+alias vi='vim.gtk3 '
+alias vim='vim.gtk3 '
 alias svi='sudo vi'
 
 alias diff='colordiff'
